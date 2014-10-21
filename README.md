@@ -33,3 +33,15 @@ hapi-boilerplate
 ├── README.md
 └── routes.js               # define all the routes in this file.
 ```
+
+##Usage
+
+Just clone the repository:
+
+```bash
+$ git clone https://github.com/miguelcobain/hapi-boilerplate.git
+```
+
+and start coding.
+
+To run the application run `$ node app`.
