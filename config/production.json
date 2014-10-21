@@ -1,0 +1,10 @@
+{
+	"port":80,
+  "database" : {
+    "username": "production_user",
+    "password": "production_password",
+    "database": "production_database",
+    "host": "127.0.0.1",
+    "dialect": "postgres"
+  }
+}

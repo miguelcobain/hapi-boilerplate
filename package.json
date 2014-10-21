@@ -1,0 +1,17 @@
+{
+  "name": "hapi-boilerplate",
+  "version": "0.0.1",
+  "description": "Example hapi application",
+  "main": "app.js",
+  "author": "miguelcobain",
+  "license": "ISC",
+  "dependencies": {
+    "config": "^1.5.0",
+    "good": "^2.3.0",
+    "hapi": "^6.11.1",
+    "hapi-as-promised": "^1.0.1",
+    "pg": "^3.6.1",
+    "require-directory": "^2.0.0",
+    "sequelize": "^2.0.0-rc2"
+  }
+}
