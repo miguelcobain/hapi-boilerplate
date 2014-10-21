@@ -1,5 +1,5 @@
-# Hapi Boilerplate #
-## A Hapi boilerplate with Sequelize, Sequelize-CLI and Config ##
+# Hapi Boilerplate
+### *A Hapi boilerplate with Sequelize, Sequelize-CLI and node-config*
 
 Cool features in this boilerplate:
 
@@ -44,4 +44,4 @@ $ git clone https://github.com/miguelcobain/hapi-boilerplate.git
 
 and start coding.
 
-To run the application run `$ node app`.
+To run the application run `node app`.
