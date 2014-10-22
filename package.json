@@ -1,22 +1,22 @@
 {
   "name": "hapi-boilerplate",
   "version": "0.0.1",
-  "description": "A HapiJS boilerplate with Sequelize, Sequelize-CLI and node-config",
+  "description": "A Hapi boilerplate with Sequelize, Sequelize-CLI and node-config",
   "main": "app.js",
   "author": "miguelcobain <jmandrade0@gmail.com>",
   "license": "ISC",
-  "keywords":[
+  "keywords": [
     "hapi",
     "node",
     "boilerplate",
     "sequelize"
   ],
-  "repository":{
-    "type" : "git",
-    "url" : "https://github.com/miguelcobain/hapi-boilerplate"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miguelcobain/hapi-boilerplate"
   },
-  "bugs":{
-    "url" : "https://github.com/miguelcobain/hapi-boilerplate/issues"
+  "bugs": {
+    "url": "https://github.com/miguelcobain/hapi-boilerplate/issues"
   },
   "dependencies": {
     "config": "^1.5.0",
@@ -26,5 +26,8 @@
     "pg": "^3.6.1",
     "require-directory": "^2.0.0",
     "sequelize": "^2.0.0-rc2"
+  },
+  "devDependencies": {
+    "lab": "^4.7.0"
   }
 }
