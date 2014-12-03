@@ -40,6 +40,11 @@ Just clone the repository:
 $ git clone https://github.com/miguelcobain/hapi-boilerplate.git
 ```
 
+run
+
+```bash
+$ npm install
+```
 and start coding.
 
 To run the application run `node app`.
