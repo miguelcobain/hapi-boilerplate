@@ -1,0 +1,9 @@
+{
+	"port":3000,
+  "database" : {
+    "username": "test_user",
+    "password": "test_password",
+    "database": "test_database",
+    "dialect": "sqlite"
+  }
+}
