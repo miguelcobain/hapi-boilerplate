@@ -1,6 +1,6 @@
 {
   "name": "hapi-boilerplate",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A Hapi boilerplate with Sequelize, Sequelize-CLI and node-config",
   "main": "app.js",
   "author": "miguelcobain <jmandrade0@gmail.com>",
@@ -20,6 +20,8 @@
   },
   "dependencies": {
     "config": "^1.8.1",
+    "good": "^5.0.0-rc1",
+    "good-console": "^2.1.0",
     "hapi": "^8.0.0",
     "pg": "^3.6.1",
     "require-directory": "^2.0.0",

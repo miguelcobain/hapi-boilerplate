@@ -16,9 +16,6 @@ var server = new Hapi.Server({
 });
 server.connection({port:settings.port, host:settings.host});
 
-//While good isn't updated for Hapi 8
-server.log = console.log;
-
 // Export the server to be required elsewhere.
 module.exports = server;
 
