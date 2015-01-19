@@ -59,7 +59,7 @@ var start = function(){
   });
 };
 
-// If someone runs: "node app.js" then automatically start the server
+// If someone runs: "node server.js" then automatically start the server
 if (path.basename(process.argv[1],'.js') == path.basename(__filename,'.js')) {
   setup(function(){
     start();
