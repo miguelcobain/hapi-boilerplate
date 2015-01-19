@@ -37,8 +37,13 @@ var initDb = function(cb){
 };
 
 var setup = function(done){
-  // Bootstrap Hapi Server Plugins, passes the server object to the plugins
-  plugins(server);
+
+	//Register all plugins
+	server.register(plugins, function (err) {
+		if (err) {
+			throw err; // something bad happened loading a plugin
+		}
+	});
 
   // Add the server routes
   server.route(routes);
