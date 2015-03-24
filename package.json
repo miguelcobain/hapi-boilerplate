@@ -25,6 +25,7 @@
     "good-console": "^2.1.0",
     "hapi": "^8.1.0",
     "pg": "^3.6.3",
+    "pg-hstore": "^2.3.1",
     "require-directory": "^2.0.0",
     "sequelize": "^2.0.0-rc7"
   },
