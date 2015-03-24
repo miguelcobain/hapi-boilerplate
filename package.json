@@ -2,7 +2,7 @@
   "name": "hapi-boilerplate",
   "version": "0.0.4",
   "description": "A Hapi boilerplate with Sequelize, Sequelize-CLI and node-config",
-  "main": "app.js",
+  "main": "server.js",
   "author": "miguelcobain <jmandrade0@gmail.com>",
   "license": "ISC",
   "keywords": [
