@@ -19,18 +19,17 @@
     "url": "https://github.com/miguelcobain/hapi-boilerplate/issues"
   },
   "dependencies": {
-    "boom": "^2.6.1",
-    "config": "^1.8.1",
-    "good": "^5.1.1",
-    "good-console": "^2.1.0",
-    "hapi": "^8.1.0",
-    "pg": "^3.6.3",
-    "pg-hstore": "^2.3.1",
-    "require-directory": "^2.0.0",
-    "sequelize": "^2.0.0-rc7"
+    "boom": "^5.2.0",
+    "config": "^1.26.1",
+    "good": "^7.2.0",
+    "good-console": "^6.4.0",
+    "hapi": "^16.5.0",
+    "pg": "^7.0.2",
+    "require-directory": "^2.1.1",
+    "sequelize": "^4.4.2"
   },
   "devDependencies": {
-    "lab": "^4.7.0",
-    "sqlite3": "^3.0.2"
+    "lab": "^14.1.1",
+    "sqlite3": "^3.1.8"
   }
 }
