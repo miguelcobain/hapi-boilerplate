@@ -1,3 +1,5 @@
+'use strict';
+
 var Hapi = require('hapi');
 
 var path = require('path');
@@ -7,13 +9,8 @@ var routes = require('./routes');
 var plugins = require('./plugins');
 var models = require('./models');
 
-var server = new Hapi.Server({
-  connections:{
-    routes:{
-      cors:settings.cors
-    }
-  }
-});
+var server = new Hapi.Server();
+
 server.connection({port:settings.port, host:settings.host});
 
 // Export the server to be required elsewhere.
@@ -36,32 +33,14 @@ var initDb = function(cb){
   }
 };
 
-var setup = function(done){
+server.route(routes);
 
-	//Register all plugins
-	server.register(plugins, function (err) {
-		if (err) {
-			throw err; // something bad happened loading a plugin
-		}
-	});
-
-  // Add the server routes
-  server.route(routes);
-
-  initDb(function(){
-    done();
+server.start((err)=>{
+  if(err){
+    throw err;
+  }
+  initDb(()=>{
+      console.log(`Server running at: ${server.info.uri}`);
   });
-};
-
-var start = function(){
-  server.start(function(){
-    server.log('info', 'Server running at: ' + server.info.uri);
-  });
-};
-
-// If someone runs: "node server.js" then automatically start the server
-if (path.basename(process.argv[1],'.js') == path.basename(__filename,'.js')) {
-  setup(function(){
-    start();
-  });
-}
+  
+});
