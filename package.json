@@ -20,16 +20,16 @@
   },
   "dependencies": {
     "boom": "^5.2.0",
-    "config": "^1.26.1",
-    "good": "^7.2.0",
-    "good-console": "^6.4.0",
-    "hapi": "^16.5.0",
-    "pg": "^7.0.2",
+    "config": "^1.29.2",
+    "good": "^7.3.0",
+    "good-console": "^6.4.1",
+    "hapi": "^17.2.0",
+    "pg": "^7.4.1",
     "require-directory": "^2.1.1",
     "sequelize": "^4.4.2"
   },
   "devDependencies": {
-    "lab": "^14.1.1",
-    "sqlite3": "^3.1.8"
+    "lab": "^14.3.2",
+    "sqlite3": "^3.1.13"
   }
 }

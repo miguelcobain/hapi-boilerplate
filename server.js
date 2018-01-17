@@ -9,12 +9,18 @@ var routes = require('./routes');
 var plugins = require('./plugins');
 var models = require('./models');
 
-var server = new Hapi.Server();
+const internals = {
+  templatePath: '.'
+};
 
-server.connection({port:settings.port, host:settings.host});
+const server = new Hapi.Server({
+  host:settings.host,
+  port: settings.port
+});
+
+// server.connection({port:settings.port, host:settings.host});
 
 // Export the server to be required elsewhere.
-module.exports = server;
 
 var initDb = function(cb){
   var sequelize = models.sequelize;
@@ -35,12 +41,15 @@ var initDb = function(cb){
 
 server.route(routes);
 
-server.start((err)=>{
-  if(err){
-    throw err;
-  }
+
+internals.main = async () => {
+  await server.start();
   initDb(()=>{
-      console.log(`Server running at: ${server.info.uri}`);
+    console.log('Server is running at ' + server.info.uri);
   });
-  
-});
+ 
+}
+
+internals.main();
+
+module.exports = server;
