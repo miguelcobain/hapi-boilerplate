@@ -32,7 +32,7 @@ hapi-boilerplate
 └── routes.js               # define all the routes in this file.
 ```
 
-##Usage
+## Usage
 
 Just clone the repository:
 
